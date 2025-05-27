@@ -1,0 +1,7 @@
+{
+  "name": "ppal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
