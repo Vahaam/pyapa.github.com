@@ -500,6 +500,33 @@
             <div class="see-more transaction">See more</div>
         </div>
 
+
+
+
+  <button onclick="mostrarNotificacion()">Mostrar Notificación</button>
+
+  <script>
+    function mostrarNotificacion() {
+      const titulo = "PayPal";
+      const opciones = {
+        body: "Envió $700 USD a Juan Navarro",
+        icon: "https://i.postimg.cc/YqXB4MSC/pngwing-com-9.png" // ícono tipo app
+      };
+
+      if (Notification.permission === "granted") {
+        new Notification(titulo, opciones);
+      } else if (Notification.permission !== "denied") {
+        Notification.requestPermission().then(permiso => {
+          if (permiso === "granted") {
+            new Notification(titulo, opciones);
+          }
+        });
+      }
+    }
+  </script>
+
+
+
         <div class="footer">
             <div class="footer-buttons">
                 <button>Send</button>
