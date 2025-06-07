@@ -412,7 +412,7 @@
                 <img src="ppyl.png" alt="PayPal">
             </div>
             <div class="ppmargen">
-                <div class="balance"><h1>$80,270</h1></div>
+                <div class="balance"><h1>$3,270</h1></div>
                 <p>PayPal balance</p>
             </div>
         </div>
@@ -516,25 +516,7 @@
                 <div><img src="IMG_0261.PNG" alt=""><br><p style="color: #686868; font-family: Rubik, serif;">Wallet</p></div>
             </div>
         </div>
-  <script>
-    function mostrarNotificacion() {
-      const titulo = "PayPal";
-      const opciones = {
-        body: "Envió $700 USD a Juan Navarro",
-        icon: "https://i.postimg.cc/YqXB4MSC/pngwing-com-9.png" // ícono tipo app
-      };
 
-      if (Notification.permission === "granted") {
-        new Notification(titulo, opciones);
-      } else if (Notification.permission !== "denied") {
-        Notification.requestPermission().then(permiso => {
-          if (permiso === "granted") {
-            new Notification(titulo, opciones);
-          }
-        });
-      }
-    }
-  </script>
             <!-- Línea de navegación inferior -->
     <div class="nav-bar">
         <div class="nav-line"></div>
